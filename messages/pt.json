@@ -1,0 +1,173 @@
+{
+  "Layout": {
+    "title": "SummaryVox | Resumos de Livros",
+    "description": "Ouça e baixe os melhores resumos de livros em áudio e PDF.",
+    "nav": {
+      "unsubscribe": "Quero cancelar a assinatura",
+      "features": "Recursos",
+      "pricing": "Planos",
+      "login": "Entrar"
+    },
+    "footer": {
+      "description": "Sua plataforma para ouvir, baixar e aproveitar os melhores resumos de livros.",
+      "product": "Produto",
+      "home": "Início",
+      "plans": "Planos e Preços",
+      "legal": "Legal",
+      "terms": "Termos e Condições",
+      "privacy": "Política de Privacidade",
+      "subscriptionPolicy": "Política de Assinatura",
+      "support": "Suporte",
+      "cancelSubscription": "Cancelar minha assinatura",
+      "faq": "Perguntas Frequentes",
+      "rights": "Todos os direitos reservados."
+    }
+  },
+  "Landing": {
+    "hero": {
+      "title1": "Ouça e Baixe",
+      "title2": "Resumos de Livros",
+      "subtitle": "Ouça, baixe e compartilhe resumos de livros nos formatos áudio e PDF. Conteúdo cuidadosamente selecionado para você.",
+      "btnPrimary": "Teste 24h Grátis",
+      "btnSecondary": "Ver Recursos"
+    },
+    "features": {
+      "title": "Principais Recursos",
+      "f1Title": "Áudio e PDF",
+      "f1Desc": "Aproveite nossos resumos no formato que preferir. Ouça em qualquer lugar ou leia tranquilamente.",
+      "f2Title": "Conteúdo Selecionado",
+      "f2Desc": "Curadoria especializada com os melhores livros de negócios, desenvolvimento pessoal e muito mais. Direto ao que importa.",
+      "f3Title": "Baixe seu Conteúdo",
+      "f3Desc": "Leve os resumos para qualquer lugar. Você pode baixar os PDFs ou áudios para consumir offline no momento que decidir."
+    },
+    "engagement": {
+      "title": "Quantos livros você comprou e nunca terminou?",
+      "description": "Sabemos que o tempo é seu recurso mais valioso. Não deixe que a falta de horas o impeça de absorver o conhecimento dos líderes mundiais. Com SummaryVox, você obtém as principais ideias em menos de 20 minutos.",
+      "btn": "Comece a Aprender Hoje"
+    },
+    "pricing": {
+      "title": "Planos Simples",
+      "free": {
+        "title": "Gratuito",
+        "price": "$0",
+        "features": [
+          "Acesso a conteúdo limitado",
+          "Recursos básicos de reprodução",
+          "Suporte padrão"
+        ],
+        "btn": "Começar Grátis"
+      },
+      "premium": {
+        "tag": "Teste 24h",
+        "title": "Premium",
+        "price": "$29.99 USD",
+        "period": "/mês",
+        "features": [
+          "Resumos ilimitados (Áudio e PDF)",
+          "Todos os recursos de reprodução",
+          "Suporte prioritário",
+          "Downloads offline de todo o catálogo"
+        ],
+        "btn": "Iniciar Teste de 24h"
+      }
+    },
+    "cta": {
+      "title": "Pronto para nutrir sua mente?",
+      "description": "Junte-se a milhares de usuários que já ouvem as melhores sinopses com o SummaryVox.",
+      "btn": "Criar Conta Grátis"
+    }
+  },
+  "Cancel": {
+    "title": "Cancelar Assinatura",
+    "desc1": "Lamentamos vê-lo partir. Na SummaryVox, valorizamos a transparência e a sua tranquilidade.",
+    "reminderTitle": "Um lembrete sobre nossa política:",
+    "li1": "<strong>Teste de 24h:</strong> Se você estiver nas suas primeiras 24 horas, o cancelamento é totalmente gratuito.",
+    "li2": "<strong>Cobranças Futuras:</strong> Ao confirmar, você interromperá imediatamente todas as futuras cobranças automáticas.",
+    "desc2": "Para prosseguir com o cancelamento, acesse seu painel e vá para a seção de Faturamento.",
+    "btnLogin": "Entrar e Cancelar",
+    "btnHome": "Voltar ao início",
+    "support1": "Problemas para entrar ou tem dúvidas?",
+    "support2": "Escreva para "
+  },
+  "Login": {
+    "title": "Bem-vindo de volta",
+    "subtitle": "Entre ou crie sua conta",
+    "errEmail": "Por favor, insira seu email.",
+    "successMagic": "Verifique seu email! Enviamos um link mágico.",
+    "emailLabel": "Seu email",
+    "emailPlace": "nome@exemplo.com",
+    "btnSubmit": "Entrar com Link Mágico",
+    "loading": "Carregando...",
+    "or": "ou continue com",
+    "btnGoogle": "Google",
+    "termsP1": "Ao entrar, você aceita nossos ",
+    "termsLink": "Termos de Serviço",
+    "termsP2": " e ",
+    "privacyLink": "Política de Privacidade"
+  },
+  "Privacy": {
+    "back": "← Voltar ao início",
+    "title": "Política de Processamento de Dados e Privacidade",
+    "updated": "Última atualização: ",
+    "s1Title": "1. Disposições Gerais",
+    "s1Text": "Este instrumento estabelece as políticas aplicadas pela SummaryVox em relação à coleta e confidencialidade de dados pessoais. Ao usar a Plataforma, o usuário consente com o tratamento sob estes termos.",
+    "s2Title": "2. Natureza da Informação",
+    "s2Text": "Coletamos apenas o estritamente necessário. Estes incluem:",
+    "s2Li1": "<strong>Contato:</strong> Nome e email vinculados ao perfil.",
+    "s2Li2": "<strong>Financeiros:</strong> SummaryVox não armazena dados de cartão (usamos gateways PCI-DSS).",
+    "s2Li3": "<strong>Uso:</strong> Histórico de escutas e navegação.",
+    "s3Title": "3. Finalidade",
+    "s3Text": "Os dados serão utilizados para:",
+    "s3Li1": "Gerenciar contas.",
+    "s3Li2": "Gerenciar assinaturas e o teste de 24 horas.",
+    "s3Li3": "Comunicar mudanças.",
+    "s3Li4": "Prestar suporte.",
+    "s4Title": "4. Cessão de Dados",
+    "s4Text": "Não comercializamos dados com terceiros. O compartilhamento é operativamente restrito a provedores confiáveis (gateways de pagamento e hospedagem).",
+    "s5Title": "5. Segurança",
+    "s5Text": "Aplicamos medidas para proteger a integridade dos dados, com criptografia SSL.",
+    "s6Title": "6. Retenção e Direitos ARCO",
+    "s6Text": "O usuário tem o direito de acessar, retificar e cancelar seus dados contatando a Empresa."
+  },
+  "SubPolicy": {
+    "back": "← Voltar ao início",
+    "title": "Política de Assinatura e Faturamento",
+    "intro": "Este documento detalha nossos métodos de cobrança.",
+    "s1Title": "1. Período de Graça",
+    "s1Text": "Oferecemos 24 horas gratuitas após o registro. Nenhum debito é feito nesta janela.",
+    "s2Title": "2. Cancelamento Antecipado",
+    "s2Text": "Você pode cancelar sem custos nas primeiras 24 horas.",
+    "s3Title": "3. Renovação Tácita Mensual",
+    "s3Text": "Passadas as 24 horas sem cancelamento, a assinatura Premium é iniciada e cobrada mensalmente.",
+    "s4Title": "4. Efeitos do Cancelamento",
+    "s4Text": "O cancelamento cessa futuras faturas. Você retém acesso até o fim do ciclo pago.",
+    "s5Title": "5. Ajustes",
+    "s5Text": "SummaryVox pode modificar os preços com aviso prévio de 30 dias."
+  },
+  "Terms": {
+    "back": "← Voltar ao início",
+    "title": "Termos e Condições Gerais",
+    "updated": "Última atualização: ",
+    "s1Title": "1. Aceitação",
+    "s1Text": "Ao usar o SummaryVox, você concorda com estes Termos. Se não concordar, não use a plataforma.",
+    "s2Title": "2. O Serviço",
+    "s2Text": "Resumos em áudio e PDF curados por nossa equipe.",
+    "s3Title": "3. Planos",
+    "s3Text": "Oferecemos Assinatura Gratuita (restrita) e Assinatura Premium (acesso completo e offline).",
+    "s3Li1": "<strong>Gratuita:</strong> Acesso restrito e funções básicas.",
+    "s3Li2": "<strong>Premium:</strong> Acesso completo ao catálogo, áudio e PDF.",
+    "s4Title": "4. Contratação e Cancelamento",
+    "s4Text": "Assinantes Premium têm um teste de 24 horas grátis. Renova-se automaticamente a cada mês a menos que cancelado.",
+    "s4Li1": "<strong>Teste de 24h:</strong> Grátis.",
+    "s4Li2": "<strong>Cancelamento:</strong> Sem multa nas primeiras 24h.",
+    "s4Li3": "<strong>Renovação:</strong> Automática mensal.",
+    "s4Li4": "<strong>Efeitos:</strong> Mantém acesso até o fim do ciclo pago após cancelamento.",
+    "s4Li5": "<strong>Tarifa:</strong> Base de $29.99 USD/mês.",
+    "s5Title": "5. Propriedade Intelectual",
+    "s5Text": "O material é propriedade da SummaryVox. Proibida reprodução não autorizada.",
+    "s6Title": "6. Responsabilidade",
+    "s6Text": "Resumos para fins educativos. Não nos responsabilizamos por danos diretos ou indiretos.",
+    "s7Title": "7. Contato",
+    "s7Text": "Contate support@summaryvox.com para suporte legal ou de serviço."
+  }
+}

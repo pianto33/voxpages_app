@@ -1,0 +1,174 @@
+{
+  "Layout": {
+    "title": "SummaryVox | Resúmenes de Libros",
+    "description": "Escucha y descarga los mejores resúmenes de libros en audio y PDF.",
+    "nav": {
+      "unsubscribe": "Quiero desuscribirme",
+      "features": "Características",
+      "pricing": "Planes",
+      "login": "Ingresar"
+    },
+    "footer": {
+      "description": "Tu plataforma para escuchar, descargar y disfrutar los mejores resúmenes de libros.",
+      "product": "Producto",
+      "home": "Inicio",
+      "plans": "Planes y Precios",
+      "legal": "Legal",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad",
+      "subscriptionPolicy": "Política de Suscripción",
+      "support": "Soporte",
+      "cancelSubscription": "Cancelar mi suscripción",
+      "faq": "Preguntas Frecuentes",
+      "rights": "Todos los derechos reservados."
+    }
+  },
+  "Landing": {
+    "hero": {
+      "title1": "Escucha y Descarga",
+      "title2": "Resúmenes de Libros",
+      "subtitle": "Escucha, descarga y comparte resúmenes de libros tanto en audio como en PDF. Contenido cuidadosamente seleccionado para ti.",
+      "btnPrimary": "Prueba 24hs Gratis",
+      "btnSecondary": "Ver Características"
+    },
+    "features": {
+      "title": "Características Principales",
+      "f1Title": "Audio y PDF",
+      "f1Desc": "Disfruta de nuestros resúmenes en el formato que prefieras. Escucha en cualquier lugar o lee tranquilamente.",
+      "f2Title": "Contenido Seleccionado",
+      "f2Desc": "Curaduría experta con los mejores libros de negocios, desarrollo personal y más. Directo a lo que importa.",
+      "f3Title": "Descarga tu Contenido",
+      "f3Desc": "Lleva los resúmenes a todas partes. Puedes descargar los PDFs o el audio para consumirlos sin conexión a internet en el momento que tú decidas."
+    },
+    "engagement": {
+      "title": "¿Cuántos libros compraste y nunca terminaste?",
+      "description": "Sabemos que el tiempo es tu recurso más valioso. No dejes que la falta de horas te impida absorber el conocimiento de los líderes mundiales. Con SummaryVox, obtienes las ideas clave en menos de 20 minutos.",
+      "btn": "Empieza a Aprender Hoy"
+    },
+    "pricing": {
+      "title": "Planes Simples",
+      "free": {
+        "title": "Gratuito",
+        "price": "$0",
+        "features": [
+          "Acceso a contenido limitado",
+          "Funcionalidades básicas de reproducción",
+          "Soporte estándar"
+        ],
+        "btn": "Comenzar Gratis"
+      },
+      "premium": {
+        "tag": "Prueba de 24hs",
+        "title": "Premium",
+        "price": "$29.99 USD",
+        "period": "/mes",
+        "features": [
+          "Resúmenes ilimitados (Audio y PDF)",
+          "Todas las funciones de reproducción",
+          "Soporte prioritario",
+          "Descargas offline de todo el catálogo"
+        ],
+        "btn": "Iniciar Prueba de 24hs"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para nutrir tu mente?",
+      "description": "Únete a miles de usuarios que ya escuchan los mejores resúmenes con SummaryVox.",
+      "btn": "Crear Cuenta Gratis"
+    }
+  },
+  "Cancel": {
+    "title": "Cancelar Suscripción",
+    "desc1": "Lamentamos verte partir. En SummaryVox valoramos la transparencia y tu tranquilidad.",
+    "reminderTitle": "Recordatorio sobre nuestra política:",
+    "li1": "<strong>Prueba de 24hs:</strong> Si estás dentro de tus primeras 24 horas, la cancelación es completamente sin cargo.",
+    "li2": "<strong>Cobros Futuros:</strong> Al confirmar, detendrás inmediatamente todas las futuras facturaciones automáticas.",
+    "desc2": "Para proceder con la cancelación, por favor ingresa el correo electrónico asociado a tu cuenta.",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "btnLogin": "Cancelar Suscripción",
+    "btnHome": "Volver al inicio",
+    "support1": "¿Tienes problemas para ingresar o tienes dudas?",
+    "support2": "Escríbenos a "
+  },
+  "Login": {
+    "title": "Bienvenido de nuevo",
+    "subtitle": "Ingresa o crea tu cuenta",
+    "errEmail": "Por favor ingresa tu email.",
+    "successMagic": "¡Revisa tu correo! Te hemos enviado un link mágico.",
+    "emailLabel": "Tu email",
+    "emailPlace": "nombre@ejemplo.com",
+    "btnSubmit": "Ingresar con Link Mágico",
+    "loading": "Cargando...",
+    "or": "o continúa con",
+    "btnGoogle": "Google",
+    "termsP1": "Al ingresar, aceptas nuestros ",
+    "termsLink": "Términos de Servicio",
+    "termsP2": " y ",
+    "privacyLink": "Política de Privacidad"
+  },
+  "Privacy": {
+    "back": "← Volver al inicio",
+    "title": "Política de Tratamiento de Datos y Privacidad",
+    "updated": "Última actualización: ",
+    "s1Title": "1. Disposiciones Generales",
+    "s1Text": "El presente instrumento establece las políticas y procedimientos aplicados por SummaryVox (en adelante, \"la Empresa\", \"Nosotros\" o \"la Plataforma\") respecto de la recolección, resguardo, tratamiento y confidencialidad de los datos personales suministrados por los usuarios durante su interacción con nuestros servicios. Al utilizar la Plataforma, el usuario presta su consentimiento informado y expreso para el tratamiento de su información bajo los términos aquí descritos.",
+    "s2Title": "2. Naturaleza de la Información Recabada",
+    "s2Text": "Nos limitamos a recopilar la información estrictamente necesaria para la prestación y optimización del servicio brindado. Dichos datos comprenden, de manera enunciativa mas no limitativa:",
+    "s2Li1": "<strong>Datos de Identidad y Contacto:</strong> Nombre, dirección de correo electrónico y credenciales de acceso vinculadas al perfil del usuario.",
+    "s2Li2": "<strong>Datos Financieros y Transaccionales:</strong> Información relativa a la pasarela y métodos de pago correspondientes a la gestión de las suscripciones. Cabe aclarar que SummaryVox no almacena los datos sensibles de tarjetas de crédito en sus propios servidores, delegando dicha labor a procesadores de pago de terceros certificados bajo los más altos estándares de seguridad y cumplimiento normativo (PCI-DSS).",
+    "s2Li3": "<strong>Datos de Uso e Interacción:</strong> Métricas de navegación, historial de resúmenes consumidos (audio/PDF) y preferencias de configuración.",
+    "s3Title": "3. Finalidad del Tratamiento de Datos",
+    "s3Text": "La información recolectada por la Empresa tiene como fundamento jurídico la correcta y efectiva prestación de los servicios comerciales acordados. Específicamente, los datos serán utilizados para:",
+    "s3Li1": "Administrar cuentas de usuario y habilitar el acceso concurrente a la plataforma de resúmenes.",
+    "s3Li2": "Gestionar los procedimientos de facturación, procesamiento de cobros recurrentes y validación de períodos de prueba (ej. prueba gratuita de 24 horas).",
+    "s3Li3": "Comunicar cambios sustanciales en la operatoria de la Plataforma, incluyendo, entre otros, notificaciones anticipadas respecto de modificaciones arancelarias y renovaciones automáticas de suscripciones.",
+    "s3Li4": "Facilitar asistencia técnica y dar curso a requerimientos o planteos ingresados mediante los canales oficiales de Soporte.",
+    "s4Title": "4. Cesión de Datos a Terceros",
+    "s4Text": "La Empresa se obliga contractualmente a no comercializar, ceder, ni de ninguna forma enajenar a terceros el acceso a la base de datos personales obtenida. La divulgación de información a terceros se circumscribe única y exclusivamente al intercambio de datos operativos necesarios con proveedores de servicios de confianza (ej. pasarelas de pago y proveedores de alojamiento web), siempre que los mismos se hallen sujetos a sendos convenios de confidencialidad y demuestren el fiel cumplimiento de legislaciones relativas a la protección de datos aplicables de estándar internacional.",
+    "s5Title": "5. Políticas Sistémicas sobre Vulneración y Seguridad",
+    "s5Text": "En SummaryVox se aplican medidas organizativas, procedimentales y técnicas tendientes a salvaguardar la integridad de los datos resguardados frente a accesos no autorizados, alteración o pérdida. La transmisión de información crítica es encriptada empleando el protocolo Secure Socket Layer (SSL) o tecnologías de características equivalentes o superiores.",
+    "s6Title": "6. Conservación y Derechos ARCO",
+    "s6Text": "Mantendremos la retención de los datos del usuario únicamente durante el plazo que la suscripción o la cuenta permanezcan activas, y conservaremos información con fines de auditoría y obligaciones de orden legal según exija la normativa competente. El usuario retiene su pleno derecho legal a acceder, rectificar, cancelar y oponerse (derechos ARCO) al procesamiento de su información en cualquier momento que así lo requiriere comunicándose a las direcciones dispuestas por la Empresa."
+  },
+  "SubPolicy": {
+    "back": "← Volver al inicio",
+    "title": "Política de Suscripción y Facturación",
+    "intro": "El presente documento se anexa e integra jurídicamente a los Términos y Condiciones Generales de SummaryVox, teniendo como fin particularizar y transparentar la modalidad comercial y los compromisos de cobro suscriptos con el usuario a la hora de adherir a nuestros planes arancelados.",
+    "s1Title": "1. Concesión del Período de Gracia (Evaluación Gratuita)",
+    "s1Text": "Al formalizar su inclusión en el Plan Premium, al usuario le asiste el derecho de gozar de un período de gracia e inducción al servicio por un lapso temporal de veinticuatro (24) horas ininterrumpidas, contadas temporalmente a partir del registro inicial. Durante la citada ventana de tiempo, el acceso a la plataforma de resúmenes (Audio y PDF) es de carácter totalmente gratuito, comprometiéndose la Empresa a no efectuar asiento de cobro, reserva, retención ni débito de naturaleza alguna sobre la tarjeta o método de pago pre-autorizado.",
+    "s2Title": "2. Procedimiento de Revocación y Cancelación Anticipada",
+    "s2Text": "De no cumplirse sus expectativas, asiste al usuario el derecho incontestable a cancelar la presente relación comercial en el transcurso de las referidas veinticuatro (24) horas primarias. Todo trámite de revocación ejecutado durante el período de evaluación precitado operará de forma gratuita, sin penalidad punitiva, costo de salida, ni saldo deudor futuro aplicable por parte de la Empresa.",
+    "s3Title": "3. Renovación Tácita Mensual",
+    "s3Text": "Si transcurrido el lapso de tolerancia de veinticuatro (24) horas el usuario hubiese omitido la baja explícita del servicio, entenderá la Empresa manifestada la conformidad respectiva. Automáticamente, este hecho jurídico originará la entrada en vigencia formal de la Suscripción Premium mediante la deducción pre acordada de la tarifa mensual. Estos estipendios ostentan cualidad recurrente, conllevando renovación tácita automática cada mes natural subsiguiente.",
+    "s4Title": "4. Efectos de la Resolución Unilateral de la Suscripción",
+    "s4Text": "El usuario retiene en su haber la potestad de finalizar unilateralmente el contrato de suscripción trascurrido el período de prueba. La efectivización de la cancelación por vía del panel de control de la Plataforma constituirá impedimento legal sobre SummaryVox y sus pasarelas de pago para ejecutar la cobranza en ciclos de facturación posteriores a la baja. A pesar de tal resolución comercial, las obligaciones inherentes de la Empresa exigen permitir al usuario el acceso y goce continuado de sus funciones Premium adquiridas previamente, hasta consumirse la integridad de los días inherentes al ciclo facturado o período en contención.",
+    "s5Title": "5. Potestad de Ajustes Económicos Remunerativos",
+    "s5Text": "La tarifa fijada por la Suscripción Premium podrá ser objeto de revisiones y modificaciones de carácter unilateral por parte de SummaryVox. Con miras a proteger el principio de equidad, nos imponemos el deber precontractual de cursar notificación fehaciente al usuario sobre las variaciones propuestas respecto de los importes a obrar, operando tales avisos con un plazo mínimo de treinta (30) días corridos de antelación sobre el eventual débito modificado en la tarjeta registrada, pudiendo el usuario obrar mediante cancelación si rechazare la oferta de nuevos precios."
+  },
+  "Terms": {
+    "back": "← Volver al inicio",
+    "title": "Términos y Condiciones Generales",
+    "updated": "Última actualización: ",
+    "s1Title": "1. Aceptación de los Términos",
+    "s1Text": "Al acceder, navegar o utilizar la plataforma SummaryVox (en adelante, \"el Servicio\" o \"la Plataforma\"), el usuario acepta someterse a los presentes Términos y Condiciones Generales de Uso, así como a toda normativa legal aplicable. La utilización del Servicio le atribuye la condición de usuario e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este documento. Si el usuario no estuviere de acuerdo con cualquiera de las condiciones aquí establecidas, deberá abstenerse de utilizar la Plataforma.",
+    "s2Title": "2. Naturaleza del Servicio",
+    "s2Text": "SummaryVox provee acceso a una biblioteca digital de resúmenes de obras literarias, disponibles en formato de audio y documento de texto portátil (PDF). Dicho contenido es objeto de curaduría y selección exclusiva por parte de nuestro equipo editorial. Nos reservamos el derecho de modificar, actualizar, suspender o discontinuar cualquier aspecto del Servicio, incluyendo la disponibilidad de determinadas obras, en cualquier momento y sin previo aviso.",
+    "s3Title": "3. Planes de Uso y Limitaciones",
+    "s3Text": "El acceso a la Plataforma se rige bajo dos modalidades de suscripción principales:",
+    "s3Li1": "<strong>Suscripción Gratuita (Básica):</strong> Concede al usuario un acceso restringido al catálogo de contenidos, limitando las capacidades de reproducción, descarga y funciones extendidas de la plataforma.",
+    "s3Li2": "<strong>Suscripción Premium:</strong> Concede al usuario acceso irrestricto al catálogo completo de resúmenes en formatos de audio y PDF, habilitando adicionalmente las funciones de reproducción avanzada y descarga para consumo sin conexión (offline).",
+    "s4Title": "4. Política de Contratación, Período de Gracia y Cancelación",
+    "s4Text": "Al contratar el Plan Premium, el usuario queda sujeto a las siguientes directrices contractuales y comerciales:",
+    "s4Li1": "<strong>Período de Prueba Exento de Cargos:</strong> Se otorga un plazo de gracia de veinticuatro (24) horas contadas a partir del registro inicial en el Plan Premium. Durante este lapso, no se efectuará liquidación ni débito alguno sobre el medio de pago registrado por el usuario.",
+    "s4Li2": "<strong>Derecho de Revocación y Cancelación Temprana:</strong> El usuario se encuentra facultado para cancelar su suscripción, de forma unilateral y sin penalidad, en cualquier momento dentro de las primeras veinticuatro (24) horas de prueba.",
+    "s4Li3": "<strong>Renovación Tácita y Automática:</strong> Expirado el plazo de veinticuatro (24) horas sin que medie solicitud de cancelación por parte del usuario, se perfeccionará el alta de la suscripción, dando inicio inmediato al primer ciclo de facturación mensual. La suscripción se renovará de forma automática por períodos contractuales sucesivos e idénticos (mensuales).",
+    "s4Li4": "<strong>Efectos Jurídicos de la Cancelación:</strong> La solicitud de cancelación cursada con posterioridad al período de prueba surtirá efectos inmediatos sobre los futuros ciclos de facturación, deteniendo la emisión de nuevos cobros. Sin perjuicio de ello, el usuario conservará el derecho de acceso a los servicios Premium hasta la conclusión del ciclo abonado en curso, sin lugar a reintegros retroactivos o prorrateados.",
+    "s4Li5": "<strong>Condiciones Económicas y Modificaciones:</strong> La tarifa base de la Suscripción Premium inicia en $29.99 USD mensuales. Sin embargo, podrán aplicar promociones, descuentos u ofertas excepcionales en función de la jurisdicción del usuario o del canal de contratación seleccionado. SummaryVox se reserva el deber de notificar de manera fehaciente, con al menos treinta (30) días corridos de anticipación, cualquier modificación general en la estructura de precios base o tarifas recurrentes, antes de su efectiva aplicación al método de pago registrado.",
+    "s5Title": "5. Derechos de Autor y Propiedad Intelectual",
+    "s5Text": "Todos los materiales, resúmenes, textos, audios, gráficos, logotipos, diseños y demás contenidos dispuestos en la Plataforma constituyen propiedad intelectual exclusiva de SummaryVox o de sus respectivos licenciantes, encontrándose protegidos bajo leyes nacionales e internacionales de derechos de autor y propiedad industrial. Queda terminantemente prohibida la reproducción, duplicación, reventa, distribución, explotación comercial o comunicación pública del contenido sin la correspondiente autorización previa, expresa y por escrito por parte de nuestra entidad.",
+    "s6Title": "6. Exención y Limitación de Responsabilidad",
+    "s6Text": "Los contenidos ofrecidos en SummaryVox (resúmenes) se publican con fines exclusivamente informativos y educativos. La Plataforma y sus administradores no serán civil ni comercialmente responsables ante el usuario o terceros por ningún daño directo, indirecto, incidental, consecuente, o lucro cesante que pudiera derivarse del uso, la dependencia, o la imposibilidad de uso del Servicio y sus materiales.",
+    "s7Title": "7. Jurisdicción y Contacto",
+    "s7Text": "Para el ejercicio de derechos, gestión de suscripciones, resolución de controversias o consultas relacionadas con la interpretación de estos Términos, el usuario dispone de los canales oficiales de atención, accesibles mediante la sección de \"Preguntas Frecuentes\" o comunicándose formalmente a soporte@summaryvox.com."
+  }
+}
