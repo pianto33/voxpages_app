@@ -3,6 +3,8 @@ import { Link } from "@/i18n/routing";
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { createClient } from "@/lib/supabase/server";
+import { LogoutButton } from "@/components/logout-button";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -24,22 +26,35 @@ export default async function RootLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "Layout" });
 
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
           <nav className="navbar">
             <div className="container navbar-content">
-              <Link href="/" className="logo d-flex align-center gap-2">
+              <Link href={user ? "/home" : "/"} className="logo d-flex align-center gap-2">
                 <img src="/logo-text.png" alt="SummaryVox Logo" height="40" style={{ objectFit: 'contain' }} />
               </Link>
               <div className="nav-links">
-              <Link href="/cancel" className="nav-link" style={{ color: "var(--brand-accent)", fontWeight: "bold" }}>{t("nav.unsubscribe")}</Link>
-              <Link href="/#features" className="nav-link">{t("nav.features")}</Link>
-              <Link href="/#pricing" className="nav-link">{t("nav.pricing")}</Link>
-              <Link href="/login" className="btn btn-outline" style={{ padding: "0.5rem 1rem", fontSize: "0.9rem" }}>
-                {t("nav.login")}
-              </Link>
+                <Link href="/cancel" className="nav-link" style={{ color: "var(--brand-accent)", fontWeight: "bold" }}>{t("nav.unsubscribe")}</Link>
+                {!user && <Link href="/#features" className="nav-link">{t("nav.features")}</Link>}
+                {!user && <Link href="/#pricing" className="nav-link">{t("nav.pricing")}</Link>}
+                
+                {user ? (
+                  <div className="d-flex gap-2">
+                    <Link href="/home" className="btn btn-outline" style={{ padding: "0.5rem 1rem", fontSize: "0.9rem", color: "var(--brand-primary-light)", borderColor: "var(--brand-primary-light)" }}>
+                      Mi Biblioteca
+                    </Link>
+                    <LogoutButton />
+                  </div>
+                ) : (
+                  <Link href="/login" className="btn btn-outline" style={{ padding: "0.5rem 1rem", fontSize: "0.9rem" }}>
+                    {t("nav.login")}
+                  </Link>
+                )}
             </div>
           </div>
         </nav>

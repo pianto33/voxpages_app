@@ -170,5 +170,11 @@
     "s6Text": "Summaries are published for educational and informational purposes. SummaryVox shall not be civilly or commercially responsible for any direct or indirect damage derived from the use or inability to use the Service.",
     "s7Title": "7. Jurisdiction and Contact",
     "s7Text": "For exercising rights or dispute resolution, contact support@summaryvox.com or view our FAQ section."
+  },
+  "Hub": {
+    "welcome": "Welcome to SummaryVox",
+    "dashboardTitle": "Your Library",
+    "dashboardDesc": "Here you can see and listen to all the summaries you have access to.",
+    "emptyState": "You haven't saved any summaries yet. Explore the catalog to get started!"
   }
 }

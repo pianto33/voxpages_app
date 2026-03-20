@@ -169,5 +169,11 @@
     "s6Text": "Resumos para fins educativos. Não nos responsabilizamos por danos diretos ou indiretos.",
     "s7Title": "7. Contato",
     "s7Text": "Contate support@summaryvox.com para suporte legal ou de serviço."
+  },
+  "Hub": {
+    "welcome": "Bem-vindo ao SummaryVox",
+    "dashboardTitle": "Sua Biblioteca",
+    "dashboardDesc": "Aqui você poderá ver e ouvir todos os resumos aos quais tem acesso.",
+    "emptyState": "Você ainda não salvou nenhum resumo. Explore o catálogo para começar!"
   }
 }

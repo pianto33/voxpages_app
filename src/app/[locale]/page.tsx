@@ -1,8 +1,18 @@
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (user) {
+    redirect(`/${locale}/home`);
+  }
+
   const t = await getTranslations({ locale, namespace: "Landing" });
 
   return (

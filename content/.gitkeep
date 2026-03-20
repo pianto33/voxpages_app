@@ -1,0 +1,23 @@
+# Content Directory
+
+Coloca aquí las carpetas de tus libros antes de subirlos a R2.
+
+Estructura esperada:
+
+```
+content/
+├── nombre-del-libro/
+│   ├── en.mp3
+│   ├── es.mp3
+│   └── cover.jpg
+└── otro-libro/
+    ├── en.mp3
+    ├── es.mp3
+    └── cover.jpg
+```
+
+Luego ejecuta:
+
+```bash
+npx tsx scripts/upload-to-r2.ts
+```

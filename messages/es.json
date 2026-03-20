@@ -170,5 +170,11 @@
     "s6Text": "Los contenidos ofrecidos en SummaryVox (resúmenes) se publican con fines exclusivamente informativos y educativos. La Plataforma y sus administradores no serán civil ni comercialmente responsables ante el usuario o terceros por ningún daño directo, indirecto, incidental, consecuente, o lucro cesante que pudiera derivarse del uso, la dependencia, o la imposibilidad de uso del Servicio y sus materiales.",
     "s7Title": "7. Jurisdicción y Contacto",
     "s7Text": "Para el ejercicio de derechos, gestión de suscripciones, resolución de controversias o consultas relacionadas con la interpretación de estos Términos, el usuario dispone de los canales oficiales de atención, accesibles mediante la sección de \"Preguntas Frecuentes\" o comunicándose formalmente a soporte@summaryvox.com."
+  },
+  "Hub": {
+    "welcome": "Bienevenido a SummaryVox",
+    "dashboardTitle": "Tu Biblioteca",
+    "dashboardDesc": "Aquí podrás ver y escuchar todos los resúmenes a los que tienes acceso.",
+    "emptyState": "Aún no has guardado ningún resumen. ¡Explora el catálogo para comenzar!"
   }
 }
