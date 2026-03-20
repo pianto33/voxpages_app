@@ -79,15 +79,20 @@
   },
   "Cancel": {
     "title": "Cancelar Suscripción",
-    "desc1": "Lamentamos verte partir. En SummaryVox valoramos la transparencia y tu tranquilidad.",
+    "desc1": "Lamentamos verte partir. Podés cancelar tu suscripción cuando quieras, sin complicaciones.",
     "reminderTitle": "Recordatorio sobre nuestra política:",
     "li1": "<strong>Prueba de 24hs:</strong> Si estás dentro de tus primeras 24 horas, la cancelación es completamente sin cargo.",
     "li2": "<strong>Cobros Futuros:</strong> Al confirmar, detendrás inmediatamente todas las futuras facturaciones automáticas.",
-    "desc2": "Para proceder con la cancelación, por favor ingresa el correo electrónico asociado a tu cuenta.",
+    "desc2": "Para proceder con la cancelación, ingresá el correo electrónico asociado a tu cuenta.",
     "emailPlaceholder": "tu@ejemplo.com",
     "btnLogin": "Cancelar Suscripción",
     "btnHome": "Volver al inicio",
-    "support1": "¿Tienes problemas para ingresar o tienes dudas?",
+    "cancelling": "Cancelando...",
+    "cancelSuccess": "Suscripción cancelada",
+    "cancelSuccessDesc": "Tu suscripción fue cancelada exitosamente. Seguirás teniendo acceso hasta el fin del período pago.",
+    "notFound": "No encontramos ninguna suscripción activa para ese email.",
+    "errorGeneric": "Ocurrió un error. Intenta de nuevo o contacta soporte.",
+    "support1": "¿Tenés problemas o dudas?",
     "support2": "Escríbenos a "
   },
   "Login": {
@@ -172,9 +177,15 @@
     "s7Text": "Para el ejercicio de derechos, gestión de suscripciones, resolución de controversias o consultas relacionadas con la interpretación de estos Términos, el usuario dispone de los canales oficiales de atención, accesibles mediante la sección de \"Preguntas Frecuentes\" o comunicándose formalmente a soporte@summaryvox.com."
   },
   "Hub": {
-    "welcome": "Bienevenido a SummaryVox",
+    "welcome": "Bienvenido a SummaryVox",
     "dashboardTitle": "Tu Biblioteca",
     "dashboardDesc": "Aquí podrás ver y escuchar todos los resúmenes a los que tienes acceso.",
-    "emptyState": "Aún no has guardado ningún resumen. ¡Explora el catálogo para comenzar!"
+    "emptyState": "Aún no has guardado ningún resumen. ¡Explora el catálogo para comenzar!",
+    "manageTitle": "Tu Suscripción",
+    "subActive": "Activo",
+    "subTrial": "Prueba gratuita",
+    "subCanceled": "Cancelado",
+    "subNextBilling": "Próximo cobro",
+    "cancelBtn": "Cancelar suscripción"
   }
 }

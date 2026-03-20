@@ -72,3 +72,12 @@ DROP TRIGGER IF EXISTS on_auth_user_created_subscription ON auth.users;
 CREATE TRIGGER on_auth_user_created_subscription
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user_subscription();
+
+-- Policy for service role (webhooks & cancel API) to update subscriptions without RLS restrictions
+CREATE POLICY "Service role can manage all subscriptions"
+  ON public.subscriptions
+  FOR ALL
+  TO service_role
+  USING (true)
+  WITH CHECK (true);
+

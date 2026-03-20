@@ -1,10 +1,11 @@
 import "./globals.css";
 import { Link } from "@/i18n/routing";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import { LogoutButton } from "@/components/logout-button";
+import { PriceKeyCapture } from "@/components/price-key-capture";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -39,6 +40,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Suspense fallback={null}>
+            <PriceKeyCapture />
+          </Suspense>
           <nav className="navbar">
             <div className="container navbar-content">
               <Link href={user ? "/home" : "/"} className="logo d-flex align-center gap-2">

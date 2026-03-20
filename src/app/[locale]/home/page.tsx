@@ -5,6 +5,7 @@ import { getAllBooks } from "@/lib/contentParser";
 import { CategorySlider } from "@/components/category-slider";
 import { SearchInput } from "@/components/search-input";
 import { BookCard } from "@/components/book-card";
+import { Link } from "@/i18n/routing";
 
 export default async function HubHomePage(props: { 
   params: Promise<{ locale: string }>;
@@ -16,7 +17,6 @@ export default async function HubHomePage(props: {
 
   const t = await getTranslations({ locale, namespace: "Hub" });
   
-  // Verify auth on server side (basic protection)
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -27,7 +27,7 @@ export default async function HubHomePage(props: {
   // Check for an active subscription
   const { data: sub } = await supabase
     .from("subscriptions")
-    .select("status, current_period_end")
+    .select("status, current_period_end, plan, stripe_subscription_id")
     .eq("user_id", user.id)
     .single();
 
@@ -40,7 +40,23 @@ export default async function HubHomePage(props: {
     redirect(`/${locale}/subscribe`);
   }
 
-  // Fetch local books (Data Layer)
+  // Format subscription details
+  const statusLabel =
+    sub?.status === "trialing"
+      ? t("subTrial")
+      : sub?.status === "active"
+      ? t("subActive")
+      : t("subCanceled");
+
+  const nextBilling = sub?.current_period_end
+    ? new Date(sub.current_period_end).toLocaleDateString(locale, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : null;
+
+  // Fetch local books
   let books = getAllBooks();
   
   if (q) {
@@ -77,6 +93,38 @@ export default async function HubHomePage(props: {
         </p>
 
         <SearchInput />
+      </div>
+
+      {/* Subscription Panel */}
+      <div className="container" style={{ marginBottom: "2rem" }}>
+        <div className="glass-card" style={{ padding: "1.25rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
+          <div>
+            <p style={{ fontSize: "0.8rem", color: "var(--text-secondary)", marginBottom: "0.2rem", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              {t("manageTitle")}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
+              <span style={{
+                padding: "0.2rem 0.7rem",
+                borderRadius: "999px",
+                fontSize: "0.8rem",
+                fontWeight: 600,
+                backgroundColor: sub?.status === "trialing" ? "rgba(99,102,241,0.2)" : "rgba(34,197,94,0.2)",
+                color: sub?.status === "trialing" ? "#a5b4fc" : "#4ade80",
+                border: `1px solid ${sub?.status === "trialing" ? "rgba(99,102,241,0.4)" : "rgba(34,197,94,0.4)"}`,
+              }}>
+                {statusLabel}
+              </span>
+              {nextBilling && (
+                <span style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                  {t("subNextBilling")}: <strong style={{ color: "var(--text-primary)" }}>{nextBilling}</strong>
+                </span>
+              )}
+            </div>
+          </div>
+          <Link href="/cancel" className="btn btn-outline" style={{ padding: "0.5rem 1.2rem", fontSize: "0.875rem" }}>
+            {t("cancelBtn")}
+          </Link>
+        </div>
       </div>
 
       <div className="container">

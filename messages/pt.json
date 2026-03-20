@@ -79,14 +79,20 @@
   },
   "Cancel": {
     "title": "Cancelar Assinatura",
-    "desc1": "Lamentamos vê-lo partir. Na SummaryVox, valorizamos a transparência e a sua tranquilidade.",
+    "desc1": "Lamentamos vê-lo partir. Você pode cancelar sua assinatura a qualquer momento, sem complicações.",
     "reminderTitle": "Um lembrete sobre nossa política:",
     "li1": "<strong>Teste de 24h:</strong> Se você estiver nas suas primeiras 24 horas, o cancelamento é totalmente gratuito.",
     "li2": "<strong>Cobranças Futuras:</strong> Ao confirmar, você interromperá imediatamente todas as futuras cobranças automáticas.",
-    "desc2": "Para prosseguir com o cancelamento, acesse seu painel e vá para a seção de Faturamento.",
-    "btnLogin": "Entrar e Cancelar",
+    "desc2": "Para prosseguir com o cancelamento, insira o e-mail associado à sua conta.",
+    "emailPlaceholder": "seu@exemplo.com",
+    "btnLogin": "Cancelar Assinatura",
     "btnHome": "Voltar ao início",
-    "support1": "Problemas para entrar ou tem dúvidas?",
+    "cancelling": "Cancelando...",
+    "cancelSuccess": "Assinatura cancelada",
+    "cancelSuccessDesc": "Sua assinatura foi cancelada com sucesso. Você manterá o acesso até o fim do período pago.",
+    "notFound": "Não encontramos nenhuma assinatura ativa para esse e-mail.",
+    "errorGeneric": "Ocorreu um erro. Tente novamente ou entre em contato com o suporte.",
+    "support1": "Problemas ou dúvidas?",
     "support2": "Escreva para "
   },
   "Login": {
@@ -174,6 +180,12 @@
     "welcome": "Bem-vindo ao SummaryVox",
     "dashboardTitle": "Sua Biblioteca",
     "dashboardDesc": "Aqui você poderá ver e ouvir todos os resumos aos quais tem acesso.",
-    "emptyState": "Você ainda não salvou nenhum resumo. Explore o catálogo para começar!"
+    "emptyState": "Você ainda não salvou nenhum resumo. Explore o catálogo para começar!",
+    "manageTitle": "Sua Assinatura",
+    "subActive": "Ativo",
+    "subTrial": "Teste gratuito",
+    "subCanceled": "Cancelado",
+    "subNextBilling": "Próxima cobrança",
+    "cancelBtn": "Cancelar assinatura"
   }
 }

@@ -79,7 +79,7 @@
   },
   "Cancel": {
     "title": "Cancel Subscription",
-    "desc1": "We are sorry to see you go. At SummaryVox, we value transparency and your peace of mind.",
+    "desc1": "We're sorry to see you go. You can cancel your subscription at any time, no hassle.",
     "reminderTitle": "A reminder about our policy:",
     "li1": "<strong>24h Trial:</strong> If you are within your first 24 hours, cancellation is completely free of charge.",
     "li2": "<strong>Future Charges:</strong> By confirming, you will immediately stop all future automatic billing.",
@@ -87,7 +87,12 @@
     "emailPlaceholder": "your@example.com",
     "btnLogin": "Cancel Subscription",
     "btnHome": "Back to Home",
-    "support1": "Having trouble logging in or have questions?",
+    "cancelling": "Cancelling...",
+    "cancelSuccess": "Subscription cancelled",
+    "cancelSuccessDesc": "Your subscription has been successfully cancelled. You will retain access until the end of your current billing period.",
+    "notFound": "We couldn't find any active subscription for that email.",
+    "errorGeneric": "An error occurred. Please try again or contact support.",
+    "support1": "Having trouble or questions?",
     "support2": "Write to "
   },
   "Login": {
@@ -175,6 +180,12 @@
     "welcome": "Welcome to SummaryVox",
     "dashboardTitle": "Your Library",
     "dashboardDesc": "Here you can see and listen to all the summaries you have access to.",
-    "emptyState": "You haven't saved any summaries yet. Explore the catalog to get started!"
+    "emptyState": "You haven't saved any summaries yet. Explore the catalog to get started!",
+    "manageTitle": "Your Subscription",
+    "subActive": "Active",
+    "subTrial": "Free trial",
+    "subCanceled": "Cancelled",
+    "subNextBilling": "Next billing",
+    "cancelBtn": "Cancel subscription"
   }
 }
