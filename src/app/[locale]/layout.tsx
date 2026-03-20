@@ -26,8 +26,14 @@ export default async function RootLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "Layout" });
 
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  let user = null;
+  try {
+    const supabase = await createClient();
+    const { data } = await supabase.auth.getUser();
+    user = data.user;
+  } catch {
+    // If Supabase is unreachable, render layout as logged-out
+  }
 
   return (
     <html lang={locale}>
