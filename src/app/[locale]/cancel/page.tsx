@@ -1,4 +1,3 @@
-import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { CancelForm } from "@/components/cancel-form";
 
@@ -13,12 +12,12 @@ export default async function CancelPage({ params }: { params: Promise<{ locale:
         <p className="mb-4" style={{ color: "var(--text-secondary)", fontSize: "1.1rem" }}>
           {t("desc1")}
         </p>
-
         <p className="mb-4" style={{ color: "var(--text)" }}>
           {t("desc2")}
         </p>
 
-        <CancelForm t={t} />
+        {/* CancelForm uses useTranslations internally */}
+        <CancelForm />
       </div>
 
       <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>

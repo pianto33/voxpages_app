@@ -26,17 +26,28 @@ export async function POST(req: NextRequest) {
 
     // Create or reuse Stripe customer
     if (!customerId) {
-      const customer = await stripe.customers.create({
-        email: user.email,
-        metadata: { supabase_user_id: user.id },
+      // Search Stripe first in case they've checked out before
+      const existing = await stripe.customers.search({
+        query: `email:'${user.email}'`,
+        limit: 1,
       });
-      customerId = customer.id;
+      if (existing.data.length > 0) {
+        customerId = existing.data[0].id;
+      } else {
+        const customer = await stripe.customers.create({
+          email: user.email,
+          metadata: { supabase_user_id: user.id },
+        });
+        customerId = customer.id;
+      }
 
-      // Save the customer ID immediately
+      // UPSERT so this works whether or not the row already exists
       await supabaseAdmin
         .from("subscriptions")
-        .update({ stripe_customer_id: customerId })
-        .eq("user_id", user.id);
+        .upsert(
+          { user_id: user.id, stripe_customer_id: customerId, status: "inactive", plan: "free" },
+          { onConflict: "user_id" }
+        );
     }
 
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";

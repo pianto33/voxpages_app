@@ -2,12 +2,10 @@
 
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
-interface CancelFormProps {
-  t: (key: string) => string;
-}
-
-export function CancelForm({ t }: CancelFormProps) {
+export function CancelForm() {
+  const t = useTranslations("Cancel");
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "success" | "not_found" | "error">("idle");
 

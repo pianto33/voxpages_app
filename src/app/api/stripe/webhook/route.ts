@@ -71,10 +71,13 @@ async function syncSubscription(
   subscription: Stripe.Subscription
 ) {
   const customerId = subscription.customer as string;
-  const status = subscription.status; // active | trialing | past_due | canceled | ...
-  const currentPeriodEnd = new Date(
-    (subscription as unknown as { current_period_end: number }).current_period_end * 1000
-  ).toISOString();
+  const status = subscription.status;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const raw = subscription as any;
+  const periodEndUnix: number | null =
+    raw.current_period_end ?? raw.items?.data?.[0]?.current_period_end ?? raw.trial_end ?? null;
+  const currentPeriodEnd = periodEndUnix ? new Date(periodEndUnix * 1000).toISOString() : null;
+
 
   const plan =
     status === "active" || status === "trialing" ? "premium" : "free";

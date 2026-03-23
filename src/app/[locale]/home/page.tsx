@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
+import { createServiceClient } from "@/lib/supabase/service";
+import { stripe } from "@/lib/stripe";
 import { redirect } from "next/navigation";
 import { getAllBooks } from "@/lib/contentParser";
 import { CategorySlider } from "@/components/category-slider";
@@ -14,6 +16,7 @@ export default async function HubHomePage(props: {
   const { locale } = await props.params;
   const searchParams = await props.searchParams;
   const q = typeof searchParams.q === "string" ? searchParams.q.toLowerCase() : "";
+  const justSubscribed = searchParams.subscribed === "true";
 
   const t = await getTranslations({ locale, namespace: "Hub" });
   
@@ -24,12 +27,90 @@ export default async function HubHomePage(props: {
     redirect("/login");
   }
 
-  // Check for an active subscription
-  const { data: sub } = await supabase
+  // If coming from Stripe success redirect, sync subscription from Stripe before checking Supabase
+  const supabaseAdmin = createServiceClient();
+  if (justSubscribed) {
+    try {
+      const { data: subRecord } = await supabaseAdmin
+        .from("subscriptions")
+        .select("stripe_customer_id")
+        .eq("user_id", user.id)
+        .single();
+
+      // Resolve customer ID: from DB row, or search Stripe by email as fallback
+      let customerId = subRecord?.stripe_customer_id ?? null;
+      if (!customerId && user.email) {
+        const found = await stripe.customers.search({
+          query: `email:'${user.email}'`,
+          limit: 1,
+        });
+        if (found.data.length > 0) {
+          customerId = found.data[0].id;
+          console.log("[home/sync] Found Stripe customer by email:", customerId);
+        }
+      }
+
+      if (customerId) {
+        const stripeSubs = await stripe.subscriptions.list({
+          customer: customerId,
+          status: "all",
+          limit: 1,
+        });
+        const stripeSub = stripeSubs.data[0];
+        console.log("[home/sync] Stripe sub:", stripeSub?.id, stripeSub?.status);
+
+        if (stripeSub) {
+          const status = stripeSub.status;
+          const plan = status === "active" || status === "trialing" ? "premium" : "free";
+
+          // Safely resolve current_period_end — field location varies by Stripe API version
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const raw = stripeSub as any;
+          const periodEndUnix: number | null =
+            raw.current_period_end ??
+            raw.items?.data?.[0]?.current_period_end ??
+            raw.trial_end ??
+            null;
+          const currentPeriodEnd = periodEndUnix
+            ? new Date(periodEndUnix * 1000).toISOString()
+            : null;
+
+          console.log("[home/sync] periodEndUnix:", periodEndUnix, "→", currentPeriodEnd);
+
+          // UPSERT — works whether the row exists or not
+          const { error: upsertErr } = await supabaseAdmin
+            .from("subscriptions")
+            .upsert(
+              {
+                user_id: user.id,
+                stripe_customer_id: customerId,
+                stripe_subscription_id: stripeSub.id,
+                status,
+                plan,
+                current_period_end: currentPeriodEnd,
+                updated_at: new Date().toISOString(),
+              },
+              { onConflict: "user_id" }
+            );
+          console.log("[home/sync] Upserted status:", status, "plan:", plan, "err:", upsertErr);
+        }
+
+      } else {
+        console.log("[home/sync] No Stripe customer found for user:", user.id, user.email);
+      }
+    } catch (err) {
+      console.error("[home] Stripe sync error:", err);
+    }
+  }
+
+  // Check subscription — use admin client to bypass RLS cache
+  const { data: sub } = await supabaseAdmin
     .from("subscriptions")
     .select("status, current_period_end, plan, stripe_subscription_id")
     .eq("user_id", user.id)
     .single();
+
+  console.log("[home] sub:", sub?.status, sub?.plan);
 
   const isActive =
     sub &&
