@@ -91,12 +91,13 @@ export default async function RootLayout({
               <Link href="/terms">{t("footer.terms")}</Link>
               <Link href="/privacy">{t("footer.privacy")}</Link>
               <Link href="/subscription-policy">{t("footer.subscriptionPolicy")}</Link>
+              <Link href="/refunds">{t("footer.refunds")}</Link>
             </div>
             <div className="footer-col">
               <h4>{t("footer.support")}</h4>
               <Link href="/cancel" style={{ color: "var(--brand-accent)" }}>{t("footer.cancelSubscription")}</Link>
               <Link href="/faq">{t("footer.faq")}</Link>
-              <Link href="mailto:support@summaryvox.com">soporte@summaryvox.com</Link>
+              <Link href="mailto:info@summaryvox.com">info@summaryvox.com</Link>
             </div>
           </div>
           <div className="container" style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid var(--surface-border)", textAlign: "center", color: "var(--text-secondary)", fontSize: "0.85rem" }}>

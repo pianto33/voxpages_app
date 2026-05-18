@@ -82,7 +82,7 @@ export default function FAQPage() {
             ¡No te preocupes! La forma más rápida de averiguarlo es revisar las bandejas de entrada de todos tus correos electrónicos (incluyendo las carpetas de Spam o Promociones) 
             buscando la palabra <strong>"SummaryVox"</strong>. 
             También intenta iniciar sesión con la opción "Continuar con Google". Si sigues sin poder ubicar la cuenta desde la cual te están cobrando, 
-            escríbenos a <strong>soporte@summaryvox.com</strong> con los últimos 4 dígitos de tu tarjeta y la fecha aproximada del cargo para que podamos localizar tu cuenta de inmediato.
+            escríbenos a <strong>info@summaryvox.com</strong> con los últimos 4 dígitos de tu tarjeta y la fecha aproximada del cargo para que podamos localizar tu cuenta de inmediato.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function FAQPage() {
         <p style={{ color: 'var(--text-secondary)' }}>
           ¿Tienes alguna otra duda que no fue respondida aquí?
         </p>
-        <a href="mailto:soporte@summaryvox.com" className="btn btn-outline mt-2" style={{ display: 'inline-block' }}>
+        <a href="mailto:info@summaryvox.com" className="btn btn-outline mt-2" style={{ display: 'inline-block' }}>
           Contáctanos por correo
         </a>
       </div>

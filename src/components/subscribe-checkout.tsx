@@ -63,7 +63,7 @@ export function SubscribeCheckout({ userName }: SubscribeCheckoutProps) {
               <li>✗ Categorías premium</li>
             </ul>
             <a
-              href="mailto:support@summaryvox.com?subject=Solicitud plan básico"
+              href="mailto:info@summaryvox.com?subject=Solicitud plan básico"
               className="btn btn-outline subscribe-plan-btn"
             >
               Empezar gratis
@@ -100,8 +100,8 @@ export function SubscribeCheckout({ userName }: SubscribeCheckoutProps) {
         <div className="subscribe-footer">
           <p>
             ¿Tenés un código de acceso?{" "}
-            <a href="mailto:support@summaryvox.com?subject=Tengo un código de acceso" style={{ color: "var(--brand-primary-light)", textDecoration: "underline" }}>
-              Contactá soporte
+            <a href="mailto:info@summaryvox.com?subject=Tengo un código de acceso" style={{ color: "var(--brand-primary-light)", textDecoration: "underline" }}>
+              Contactanos a info@summaryvox.com
             </a>
           </p>
           <p style={{ marginTop: "0.5rem" }}>
