@@ -27,7 +27,7 @@ export default async function SubscriptionPolicyPage({ params }: { params: Promi
           {t('ctaUnsub')}
         </Link>
         <a
-          href="mailto:help@support.voxpages.com?subject=Solicitud de reembolso"
+          href="mailto:help@voxpages.com?subject=Solicitud de reembolso"
           className="btn btn-outline"
           style={{ padding: '0.7rem 1.4rem' }}
         >

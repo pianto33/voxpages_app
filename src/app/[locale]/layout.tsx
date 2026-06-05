@@ -97,7 +97,7 @@ export default async function RootLayout({
               <h4>{t("footer.support")}</h4>
               <Link href="/cancel" style={{ color: "var(--brand-accent)" }}>{t("footer.cancelSubscription")}</Link>
               <Link href="/faq">{t("footer.faq")}</Link>
-              <Link href="mailto:help@support.voxpages.com">help@support.voxpages.com</Link>
+              <Link href="mailto:help@voxpages.com">help@voxpages.com</Link>
             </div>
           </div>
           <div className="container" style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid var(--surface-border)", textAlign: "center", color: "var(--text-secondary)", fontSize: "0.85rem" }}>

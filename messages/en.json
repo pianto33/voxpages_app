@@ -84,7 +84,7 @@
     "reminderTitle": "A reminder about our policy:",
     "li1": "<strong>24h Trial:</strong> If you're within your first 24 hours, the cancellation is completely free of charge and no payment is processed.",
     "li2": "<strong>Future Charges:</strong> By confirming, you immediately stop all future automatic billing. You keep Premium access until the end of the period you already paid for.",
-    "li3": "<strong>14-day refund:</strong> If less than 14 days have passed since your first paid charge, you can request a prorated refund by writing to help@support.voxpages.com.",
+    "li3": "<strong>14-day refund:</strong> If less than 14 days have passed since your first paid charge, you can request a prorated refund by writing to help@voxpages.com.",
     "desc2": "To proceed with the cancellation, enter the email address associated with your account. You don't need to log in.",
     "emailPlaceholder": "your@example.com",
     "btnLogin": "Cancel Subscription",
@@ -93,7 +93,7 @@
     "cancelSuccess": "Subscription cancelled",
     "cancelSuccessDesc": "Your subscription has been successfully cancelled. You'll retain access until the end of your current billing period. We've also sent you a confirmation email.",
     "notFound": "We couldn't find any active subscription for that email. Check that it's the same email you used to sign up, or whether you signed up with Google.",
-    "errorGeneric": "An error occurred. Please try again or write to help@support.voxpages.com.",
+    "errorGeneric": "An error occurred. Please try again or write to help@voxpages.com.",
     "support1": "Having trouble or questions?",
     "support2": "Write to "
   },
@@ -123,7 +123,7 @@
     "s1Li1": "<strong>Registration and account information:</strong> name, email address, password (stored as a hash) and the provider identifier when you sign in with Google.",
     "s1Li2": "<strong>Payment information:</strong> your card data is processed and stored by Stripe (a PCI-DSS certified processor); VoxPages does not keep your full card number or CVV on its servers. We only retain Stripe's customer_id and subscription_id while the subscription is active.",
     "s1Li3": "<strong>Usage data:</strong> IP address, device and browser type, pages visited, summaries listened to or downloaded, and playback preferences.",
-    "s1Li4": "<strong>Support communications:</strong> messages you send us to help@support.voxpages.com and our replies.",
+    "s1Li4": "<strong>Support communications:</strong> messages you send us to help@voxpages.com and our replies.",
 
     "s2Title": "2. How we use your data",
     "s2Text": "We use your personal data for the following purposes:",
@@ -137,7 +137,7 @@
     "s3Text": "Where GDPR applies, we process your personal data only when one of the following legal bases is met:",
     "s3Li1": "<strong>Performance of the contract</strong> (Art. 6(1)(b) GDPR): processing necessary to provide the service you signed up for, including account management, subscription management and delivery of summaries.",
     "s3Li2": "<strong>Legal obligation</strong> (Art. 6(1)(c) GDPR): retention of invoices and accounting records, response to tax or judicial authority requests and compliance with applicable regulations.",
-    "s3Li3": "<strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): secure and efficient operation of the service, including security logs, fraud and abuse prevention, and anonymous analytics to improve the product. You may object to processing based on legitimate interest at any time by writing to help@support.voxpages.com.",
+    "s3Li3": "<strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): secure and efficient operation of the service, including security logs, fraud and abuse prevention, and anonymous analytics to improve the product. You may object to processing based on legitimate interest at any time by writing to help@voxpages.com.",
     "s3Li4": "<strong>Consent</strong> (Art. 6(1)(a) GDPR): only if in the future we send you marketing communications or use non-essential cookies, we'll ask for explicit, granular and revocable consent. We do not rely on this legal basis today.",
 
     "s4Title": "4. Third-party services",
@@ -173,13 +173,13 @@
     "s8Li5": "Object to processing based on legitimate interest or restrict such processing.",
     "s8Li6": "Withdraw your consent at any time when processing is based on it.",
     "s8Li7": "Lodge a complaint with the competent data protection supervisory authority.",
-    "s8Note": "To exercise any of these rights, write to help@support.voxpages.com. We will respond within a maximum of 30 days.",
+    "s8Note": "To exercise any of these rights, write to help@voxpages.com. We will respond within a maximum of 30 days.",
 
     "s9Title": "9. Changes to this policy",
     "s9Text": "We may update this Privacy Policy occasionally. The current version will always be published on this page. We will notify you of material changes by email or through the service. Continued use of the service after updates implies your acknowledgment of the revised policy where the law allows.",
 
     "s10Title": "10. Contact",
-    "s10Text": "For any question about this Privacy Policy or to exercise your rights, write to <strong>help@support.voxpages.com</strong>."
+    "s10Text": "For any question about this Privacy Policy or to exercise your rights, write to <strong>help@voxpages.com</strong>."
   },
   "Terms": {
     "back": "← Back to home",
@@ -200,11 +200,11 @@
     "s3Li1": "Be at least 18 years old or have parental consent.",
     "s3Li2": "Provide truthful, accurate and up-to-date information.",
     "s3Li3": "Maintain the confidentiality and security of your password.",
-    "s3Li4": "Promptly notify us of any unauthorized use of your account by writing to help@support.voxpages.com.",
+    "s3Li4": "Promptly notify us of any unauthorized use of your account by writing to help@voxpages.com.",
     "s3_1Title": "3.1 Truthfulness of data",
     "s3_1Text": "All information provided during registration must be truthful and accurate. You warrant the authenticity of the data you provide and undertake to keep it updated. You will be solely responsible for false or inaccurate statements.",
     "s3_2Title": "3.2 Account security",
-    "s3_2Text": "Your account is personal and non-transferable. You are responsible for maintaining the confidentiality of your password, for any activity that occurs under your account, and for promptly notifying help@support.voxpages.com of any unauthorized use, as well as for damage caused by misuse of your account by third parties.",
+    "s3_2Text": "Your account is personal and non-transferable. You are responsible for maintaining the confidentiality of your password, for any activity that occurs under your account, and for promptly notifying help@voxpages.com of any unauthorized use, as well as for damage caused by misuse of your account by third parties.",
 
     "s4Title": "4. Subscription plans",
     "s4_1Title": "4.1 Free Plan",
@@ -231,7 +231,7 @@
     "s6Li2": "<strong>Cancellation during the trial:</strong> you may cancel at any time within the first 24 hours to avoid the first charge, with no penalty or exit cost.",
     "s6Li3": "<strong>Automatic renewal:</strong> after 24 hours without cancellation, the monthly subscription begins and renews automatically each calendar month.",
     "s6Li4": "<strong>Effects of cancellation:</strong> cancellation immediately stops all future charges and you keep Premium access until the end of the period already paid. No penalties or extra charges apply.",
-    "s6Li5": "<strong>14-day refund window:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to help@support.voxpages.com. After that period, cancellation stops future charges but does not generate a refund of the period already paid.",
+    "s6Li5": "<strong>14-day refund window:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to help@voxpages.com. After that period, cancellation stops future charges but does not generate a refund of the period already paid.",
 
     "s7Title": "7. Cancellation parity",
     "s7Text": "Cancelling is at least as easy as subscribing: same channel (web), equal or fewer clicks, no phone calls, no additional steps, no retention questions, and no charges. This clause applies on equal terms to all users, regardless of country of residence.",
@@ -278,7 +278,7 @@
     "s16Text": "These Terms & Conditions shall be governed by and construed in accordance with the laws of the State of Delaware, United States of America, without regard to its conflict of laws principles. The parties agree to submit to the exclusive jurisdiction of the state and federal courts located in the State of Delaware for any dispute arising from or related to these Terms, without prejudice to the mandatory consumer rights granted by the laws of your country of residence. VoxPages LLC is a limited liability company incorporated under the laws of the State of Delaware.",
 
     "s17Title": "17. Contact",
-    "s17Text": "For questions about these Terms & Conditions, exercise of rights, subscription management or dispute resolution, write to <strong>help@support.voxpages.com</strong>. By continuing to use VoxPages, you accept these Terms & Conditions in full."
+    "s17Text": "For questions about these Terms & Conditions, exercise of rights, subscription management or dispute resolution, write to <strong>help@voxpages.com</strong>. By continuing to use VoxPages, you accept these Terms & Conditions in full."
   },
   "SubPolicy": {
     "back": "← Back to home",
@@ -325,9 +325,9 @@
     "s5Title": "5. Refund policy",
     "s5Text": "Our refund policy is as follows:",
     "s5Li1": "<strong>24-hour trial:</strong> cancelling during the trial never produces a charge, so there's no refund to request.",
-    "s5Li2": "<strong>14-day window after the first charge:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to help@support.voxpages.com.",
+    "s5Li2": "<strong>14-day window after the first charge:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to help@voxpages.com.",
     "s5Li3": "<strong>Outside the 14-day window:</strong> cancellation stops future charges but does not produce a refund of the period already paid. You retain access until the end of that period.",
-    "s5Li4": "<strong>Incorrect or duplicate charges:</strong> if you spot an incorrect or duplicate charge, write to help@support.voxpages.com and we'll resolve it as soon as possible.",
+    "s5Li4": "<strong>Incorrect or duplicate charges:</strong> if you spot an incorrect or duplicate charge, write to help@voxpages.com and we'll resolve it as soon as possible.",
 
     "s6Title": "6. Changes to pricing policy",
     "s6Li1": "We will notify you of any price changes with at least 30 days' advance notice by email or through the service.",
@@ -336,7 +336,7 @@
     "s6Li4": "If you choose to continue, you accept the new price for future billing periods.",
 
     "s7Title": "7. Charge disputes",
-    "s7Li1": "If you don't recognize a charge or have a billing question, write to help@support.voxpages.com before disputing with your bank.",
+    "s7Li1": "If you don't recognize a charge or have a billing question, write to help@voxpages.com before disputing with your bank.",
     "s7Li2": "We can provide detailed information about each transaction (date, amount, method, Stripe identifier).",
     "s7Li3": "We resolve billing issues quickly and fairly.",
 
@@ -348,7 +348,7 @@
     "s8Li4": "Attempt to circumvent security or content protection measures.",
 
     "s9Title": "9. Support contact",
-    "s9Text": "For any question about cancellations, billing or service issues, write to <strong>help@support.voxpages.com</strong>. This policy may be updated periodically; changes take effect immediately upon publication on this page."
+    "s9Text": "For any question about cancellations, billing or service issues, write to <strong>help@voxpages.com</strong>. This policy may be updated periodically; changes take effect immediately upon publication on this page."
   },
   "Hub": {
     "welcome": "Welcome to VoxPages",
