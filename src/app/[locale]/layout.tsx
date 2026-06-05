@@ -46,7 +46,7 @@ export default async function RootLayout({
           <nav className="navbar">
             <div className="container navbar-content">
               <Link href={user ? "/home" : "/"} className="logo d-flex align-center gap-2">
-                <img src="/logo-text.png" alt="SummaryVox Logo" height="40" style={{ objectFit: 'contain' }} />
+                <img src="/logo-text.png" alt="VoxPages Logo" height="40" style={{ objectFit: 'contain' }} />
               </Link>
               <div className="nav-links">
                 <Link href="/cancel" className="nav-link" style={{ color: "var(--brand-accent)", fontWeight: "bold" }}>{t("nav.unsubscribe")}</Link>
@@ -76,7 +76,7 @@ export default async function RootLayout({
           <footer className="footer">
           <div className="container footer-content">
             <div className="footer-col" style={{ flex: 1, minWidth: "250px" }}>
-              <h4>SummaryVox</h4>
+              <h4>VoxPages</h4>
               <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
                 {t("footer.description")}
               </p>
@@ -97,11 +97,11 @@ export default async function RootLayout({
               <h4>{t("footer.support")}</h4>
               <Link href="/cancel" style={{ color: "var(--brand-accent)" }}>{t("footer.cancelSubscription")}</Link>
               <Link href="/faq">{t("footer.faq")}</Link>
-              <Link href="mailto:info@summaryvox.com">info@summaryvox.com</Link>
+              <Link href="mailto:help@support.voxpages.com">help@support.voxpages.com</Link>
             </div>
           </div>
           <div className="container" style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid var(--surface-border)", textAlign: "center", color: "var(--text-secondary)", fontSize: "0.85rem" }}>
-            &copy; {new Date().getFullYear()} SummaryVox. {t("footer.rights")}
+            &copy; {new Date().getFullYear()} VoxPages. {t("footer.rights")}
           </div>
         </footer>
         </NextIntlClientProvider>

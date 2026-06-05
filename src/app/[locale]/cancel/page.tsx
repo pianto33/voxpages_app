@@ -41,7 +41,7 @@ export default async function CancelPage({ params }: { params: Promise<{ locale:
       <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
         {t("support1")} <br />
         {t("support2")}
-        <a href="mailto:info@summaryvox.com" style={{ textDecoration: "underline" }}>info@summaryvox.com</a>
+        <a href="mailto:help@support.voxpages.com" style={{ textDecoration: "underline" }}>help@support.voxpages.com</a>
       </p>
     </div>
   );

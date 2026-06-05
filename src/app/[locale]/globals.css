@@ -8,15 +8,15 @@
   --text-primary: #e6edf3;
   --text-secondary: #8b949e;
   
-  /* Brand Colors from Logo (Teal & Orange) */
-  --brand-primary: #007a6e;
-  --brand-primary-light: #00a896;
-  --brand-accent: #f26430;
-  --brand-accent-light: #ff8552;
+  /* VoxPages brand colors */
+  --brand-primary: #FFC100;
+  --brand-primary-light: #FFD35C;
+  --brand-accent: #5CAC5D;
+  --brand-accent-light: #66BB6A;
 
   /* Gradients */
   --gradient-main: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-accent) 100%);
-  --gradient-glow: radial-gradient(circle at center, rgba(0, 168, 150, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  --gradient-glow: radial-gradient(circle at center, rgba(255, 193, 0, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
 
   /* Spacing & Layout */
   --container-width: 1200px;
@@ -114,14 +114,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background: var(--brand-primary);
-  color: #fff;
-  box-shadow: 0 4px 14px rgba(0, 122, 110, 0.4);
+  color: #1A1A1A;
+  box-shadow: 0 4px 14px rgba(255, 193, 0, 0.35);
 }
 
 .btn-primary:hover {
   background: var(--brand-primary-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 168, 150, 0.5);
+  box-shadow: 0 6px 20px rgba(255, 211, 92, 0.45);
 }
 
 .btn-accent {

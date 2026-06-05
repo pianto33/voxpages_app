@@ -8,7 +8,7 @@ const STORAGE_KEY = "sv_price_key";
 /**
  * Invisible component. Place in the root layout.
  * If the URL contains ?pr=xxx, saves it to localStorage for later use during checkout.
- * Example: summaryvox.com?pr=test  or  summaryvox.com/es?pr=es
+ * Example: voxpages.com?pr=test  or  voxpages.com/es?pr=es
  */
 export function PriceKeyCapture() {
   const searchParams = useSearchParams();

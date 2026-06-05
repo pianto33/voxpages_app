@@ -1,6 +1,6 @@
 {
   "Layout": {
-    "title": "SummaryVox | Book Summaries",
+    "title": "VoxPages | Book Summaries",
     "description": "Listen to and download the best book summaries in audio and PDF.",
     "nav": {
       "unsubscribe": "I want to unsubscribe",
@@ -43,7 +43,7 @@
     },
     "engagement": {
       "title": "How many books have you bought and never finished?",
-      "description": "We know time is your most valuable resource. Don't let a lack of hours keep you from absorbing the knowledge of world leaders. With SummaryVox, you get the key ideas in under 20 minutes.",
+      "description": "We know time is your most valuable resource. Don't let a lack of hours keep you from absorbing the knowledge of world leaders. With VoxPages, you get the key ideas in under 20 minutes.",
       "btn": "Start Learning Today"
     },
     "pricing": {
@@ -74,7 +74,7 @@
     },
     "cta": {
       "title": "Ready to feed your mind?",
-      "description": "Join thousands of users who are already listening to the best summaries with SummaryVox.",
+      "description": "Join thousands of users who are already listening to the best summaries with VoxPages.",
       "btn": "Create Free Account"
     }
   },
@@ -84,7 +84,7 @@
     "reminderTitle": "A reminder about our policy:",
     "li1": "<strong>24h Trial:</strong> If you're within your first 24 hours, the cancellation is completely free of charge and no payment is processed.",
     "li2": "<strong>Future Charges:</strong> By confirming, you immediately stop all future automatic billing. You keep Premium access until the end of the period you already paid for.",
-    "li3": "<strong>14-day refund:</strong> If less than 14 days have passed since your first paid charge, you can request a prorated refund by writing to info@summaryvox.com.",
+    "li3": "<strong>14-day refund:</strong> If less than 14 days have passed since your first paid charge, you can request a prorated refund by writing to help@support.voxpages.com.",
     "desc2": "To proceed with the cancellation, enter the email address associated with your account. You don't need to log in.",
     "emailPlaceholder": "your@example.com",
     "btnLogin": "Cancel Subscription",
@@ -93,7 +93,7 @@
     "cancelSuccess": "Subscription cancelled",
     "cancelSuccessDesc": "Your subscription has been successfully cancelled. You'll retain access until the end of your current billing period. We've also sent you a confirmation email.",
     "notFound": "We couldn't find any active subscription for that email. Check that it's the same email you used to sign up, or whether you signed up with Google.",
-    "errorGeneric": "An error occurred. Please try again or write to info@summaryvox.com.",
+    "errorGeneric": "An error occurred. Please try again or write to help@support.voxpages.com.",
     "support1": "Having trouble or questions?",
     "support2": "Write to "
   },
@@ -116,14 +116,14 @@
   "Privacy": {
     "back": "← Back to home",
     "title": "Privacy Policy",
-    "intro": "SummaryVox (\"SummaryVox\", \"we\", \"us\", or the \"Platform\") is committed to protecting your privacy. This Policy describes what personal data we collect, how we use it, the legal bases on which we process it, retention periods, and your rights. We process personal data in compliance with applicable data protection laws, including the EU General Data Protection Regulation (\"GDPR\") where applicable.",
+    "intro": "VoxPages (\"VoxPages\", \"we\", \"us\", or the \"Platform\") is committed to protecting your privacy. This Policy describes what personal data we collect, how we use it, the legal bases on which we process it, retention periods, and your rights. We process personal data in compliance with applicable data protection laws, including the EU General Data Protection Regulation (\"GDPR\") where applicable.",
 
     "s1Title": "1. Data we collect",
     "s1Text": "We collect only the data needed to provide the service and comply with legal obligations:",
     "s1Li1": "<strong>Registration and account information:</strong> name, email address, password (stored as a hash) and the provider identifier when you sign in with Google.",
-    "s1Li2": "<strong>Payment information:</strong> your card data is processed and stored by Stripe (a PCI-DSS certified processor); SummaryVox does not keep your full card number or CVV on its servers. We only retain Stripe's customer_id and subscription_id while the subscription is active.",
+    "s1Li2": "<strong>Payment information:</strong> your card data is processed and stored by Stripe (a PCI-DSS certified processor); VoxPages does not keep your full card number or CVV on its servers. We only retain Stripe's customer_id and subscription_id while the subscription is active.",
     "s1Li3": "<strong>Usage data:</strong> IP address, device and browser type, pages visited, summaries listened to or downloaded, and playback preferences.",
-    "s1Li4": "<strong>Support communications:</strong> messages you send us to info@summaryvox.com and our replies.",
+    "s1Li4": "<strong>Support communications:</strong> messages you send us to help@support.voxpages.com and our replies.",
 
     "s2Title": "2. How we use your data",
     "s2Text": "We use your personal data for the following purposes:",
@@ -137,7 +137,7 @@
     "s3Text": "Where GDPR applies, we process your personal data only when one of the following legal bases is met:",
     "s3Li1": "<strong>Performance of the contract</strong> (Art. 6(1)(b) GDPR): processing necessary to provide the service you signed up for, including account management, subscription management and delivery of summaries.",
     "s3Li2": "<strong>Legal obligation</strong> (Art. 6(1)(c) GDPR): retention of invoices and accounting records, response to tax or judicial authority requests and compliance with applicable regulations.",
-    "s3Li3": "<strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): secure and efficient operation of the service, including security logs, fraud and abuse prevention, and anonymous analytics to improve the product. You may object to processing based on legitimate interest at any time by writing to info@summaryvox.com.",
+    "s3Li3": "<strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): secure and efficient operation of the service, including security logs, fraud and abuse prevention, and anonymous analytics to improve the product. You may object to processing based on legitimate interest at any time by writing to help@support.voxpages.com.",
     "s3Li4": "<strong>Consent</strong> (Art. 6(1)(a) GDPR): only if in the future we send you marketing communications or use non-essential cookies, we'll ask for explicit, granular and revocable consent. We do not rely on this legal basis today.",
 
     "s4Title": "4. Third-party services",
@@ -150,7 +150,7 @@
     "s4Note": "We do not sell, rent or transfer your personal data to third parties for commercial purposes. International transfers to these providers are made under the safeguards provided by GDPR (Standard Contractual Clauses where applicable).",
 
     "s5Title": "5. Cookies and similar technologies",
-    "s5Text": "On summaryvox.com we only use strictly necessary cookies for the operation of the service, such as authentication and session management. We do not use advertising cookies or non-essential analytics cookies that require consent. If we add advertising pixels (e.g., Meta Pixel) or analytics tools requiring consent in the future, we will display a cookie banner and update this text accordingly.",
+    "s5Text": "On voxpages.com we only use strictly necessary cookies for the operation of the service, such as authentication and session management. We do not use advertising cookies or non-essential analytics cookies that require consent. If we add advertising pixels (e.g., Meta Pixel) or analytics tools requiring consent in the future, we will display a cookie banner and update this text accordingly.",
 
     "s6Title": "6. Data security",
     "s6Text": "We apply appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure or destruction: TLS encryption in transit, password hashing, role-based access controls within our team, and audit logs. No Internet-based system is 100% secure, so we cannot guarantee absolute security of information.",
@@ -173,23 +173,23 @@
     "s8Li5": "Object to processing based on legitimate interest or restrict such processing.",
     "s8Li6": "Withdraw your consent at any time when processing is based on it.",
     "s8Li7": "Lodge a complaint with the competent data protection supervisory authority.",
-    "s8Note": "To exercise any of these rights, write to info@summaryvox.com. We will respond within a maximum of 30 days.",
+    "s8Note": "To exercise any of these rights, write to help@support.voxpages.com. We will respond within a maximum of 30 days.",
 
     "s9Title": "9. Changes to this policy",
     "s9Text": "We may update this Privacy Policy occasionally. The current version will always be published on this page. We will notify you of material changes by email or through the service. Continued use of the service after updates implies your acknowledgment of the revised policy where the law allows.",
 
     "s10Title": "10. Contact",
-    "s10Text": "For any question about this Privacy Policy or to exercise your rights, write to <strong>info@summaryvox.com</strong>."
+    "s10Text": "For any question about this Privacy Policy or to exercise your rights, write to <strong>help@support.voxpages.com</strong>."
   },
   "Terms": {
     "back": "← Back to home",
     "title": "Terms & Conditions",
 
     "s1Title": "1. Acceptance of terms",
-    "s1Text": "By accessing SummaryVox or using the service (the \"Service\" or \"Platform\"), you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, you must refrain from using the Service.",
+    "s1Text": "By accessing VoxPages or using the service (the \"Service\" or \"Platform\"), you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, you must refrain from using the Service.",
 
     "s2Title": "2. Description of the service",
-    "s2Text": "SummaryVox is a platform that curates, produces and distributes summaries of non-fiction books in audio and PDF formats, offering:",
+    "s2Text": "VoxPages is a platform that curates, produces and distributes summaries of non-fiction books in audio and PDF formats, offering:",
     "s2Li1": "Summaries crafted by our editorial team from essential works (business, finance, personal development, essay, etc.).",
     "s2Li2": "High-quality audio playback and PDF downloads.",
     "s2Li3": "Curated library focused on impactful works, with new titles every week.",
@@ -200,11 +200,11 @@
     "s3Li1": "Be at least 18 years old or have parental consent.",
     "s3Li2": "Provide truthful, accurate and up-to-date information.",
     "s3Li3": "Maintain the confidentiality and security of your password.",
-    "s3Li4": "Promptly notify us of any unauthorized use of your account by writing to info@summaryvox.com.",
+    "s3Li4": "Promptly notify us of any unauthorized use of your account by writing to help@support.voxpages.com.",
     "s3_1Title": "3.1 Truthfulness of data",
     "s3_1Text": "All information provided during registration must be truthful and accurate. You warrant the authenticity of the data you provide and undertake to keep it updated. You will be solely responsible for false or inaccurate statements.",
     "s3_2Title": "3.2 Account security",
-    "s3_2Text": "Your account is personal and non-transferable. You are responsible for maintaining the confidentiality of your password, for any activity that occurs under your account, and for promptly notifying info@summaryvox.com of any unauthorized use, as well as for damage caused by misuse of your account by third parties.",
+    "s3_2Text": "Your account is personal and non-transferable. You are responsible for maintaining the confidentiality of your password, for any activity that occurs under your account, and for promptly notifying help@support.voxpages.com of any unauthorized use, as well as for damage caused by misuse of your account by third parties.",
 
     "s4Title": "4. Subscription plans",
     "s4_1Title": "4.1 Free Plan",
@@ -231,7 +231,7 @@
     "s6Li2": "<strong>Cancellation during the trial:</strong> you may cancel at any time within the first 24 hours to avoid the first charge, with no penalty or exit cost.",
     "s6Li3": "<strong>Automatic renewal:</strong> after 24 hours without cancellation, the monthly subscription begins and renews automatically each calendar month.",
     "s6Li4": "<strong>Effects of cancellation:</strong> cancellation immediately stops all future charges and you keep Premium access until the end of the period already paid. No penalties or extra charges apply.",
-    "s6Li5": "<strong>14-day refund window:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to info@summaryvox.com. After that period, cancellation stops future charges but does not generate a refund of the period already paid.",
+    "s6Li5": "<strong>14-day refund window:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to help@support.voxpages.com. After that period, cancellation stops future charges but does not generate a refund of the period already paid.",
 
     "s7Title": "7. Cancellation parity",
     "s7Text": "Cancelling is at least as easy as subscribing: same channel (web), equal or fewer clicks, no phone calls, no additional steps, no retention questions, and no charges. This clause applies on equal terms to all users, regardless of country of residence.",
@@ -244,8 +244,8 @@
     "s8Note": "You will receive a cancellation confirmation email. You keep Premium access until the end of the period already paid.",
 
     "s9Title": "9. Intellectual property",
-    "s9Text": "All content available on SummaryVox — including audio, text, graphics, logos, designs and software — is the property of SummaryVox or its licensors and is protected by copyright and intellectual property laws. Users receive a limited, non-exclusive, non-transferable license to access and use the content solely for personal, non-commercial purposes.",
-    "s9Note": "Summaries published on SummaryVox are original works created for educational and informational purposes. They are not audiobooks, recordings, transcriptions, or derivative works of the original copyrighted books, and they do not replace reading the original works.",
+    "s9Text": "All content available on VoxPages — including audio, text, graphics, logos, designs and software — is the property of VoxPages or its licensors and is protected by copyright and intellectual property laws. Users receive a limited, non-exclusive, non-transferable license to access and use the content solely for personal, non-commercial purposes.",
+    "s9Note": "Summaries published on VoxPages are original works created for educational and informational purposes. They are not audiobooks, recordings, transcriptions, or derivative works of the original copyrighted books, and they do not replace reading the original works.",
 
     "s10Title": "10. Prohibited use",
     "s10Text": "The following is strictly prohibited:",
@@ -263,27 +263,27 @@
     "s11Li4": "For important decisions, consult qualified professionals in the relevant field.",
 
     "s12Title": "12. Privacy and data protection",
-    "s12Text": "We process your personal data in accordance with our <a href=\"/privacy\">Privacy Policy</a>, which describes what data we collect, how we use it, the legal bases under GDPR, retention periods, and your rights. By using SummaryVox you confirm that you have read and accepted that policy.",
+    "s12Text": "We process your personal data in accordance with our <a href=\"/privacy\">Privacy Policy</a>, which describes what data we collect, how we use it, the legal bases under GDPR, retention periods, and your rights. By using VoxPages you confirm that you have read and accepted that policy.",
 
     "s13Title": "13. Changes to the service",
     "s13Text": "We reserve the right to modify, suspend or discontinue any aspect of the service at any time, with or without notice. We shall not be liable to you or any third party for any modification, suspension or discontinuation of the service.",
 
     "s14Title": "14. Limitation of liability",
-    "s14Text": "The service is provided \"as is\" and \"as available\". SummaryVox does not warrant that the service will be uninterrupted, error-free or completely secure. In no event will we be liable for indirect, incidental, special, consequential or punitive damages, including loss of profits, data or use.",
+    "s14Text": "The service is provided \"as is\" and \"as available\". VoxPages does not warrant that the service will be uninterrupted, error-free or completely secure. In no event will we be liable for indirect, incidental, special, consequential or punitive damages, including loss of profits, data or use.",
 
     "s15Title": "15. Promotions and special offers",
     "s15Text": "From time to time we may offer promotions, discounts or extended trial periods. These offers are subject to specific terms communicated at the time of the offer. Promotions are not stackable unless otherwise stated and may be subject to eligibility restrictions.",
 
     "s16Title": "16. Governing law and jurisdiction",
-    "s16Text": "These Terms & Conditions shall be governed by and construed in accordance with the laws of the State of Delaware, United States of America, without regard to its conflict of laws principles. The parties agree to submit to the exclusive jurisdiction of the state and federal courts located in the State of Delaware for any dispute arising from or related to these Terms, without prejudice to the mandatory consumer rights granted by the laws of your country of residence. SummaryVox LLC is a limited liability company incorporated under the laws of the State of Delaware.",
+    "s16Text": "These Terms & Conditions shall be governed by and construed in accordance with the laws of the State of Delaware, United States of America, without regard to its conflict of laws principles. The parties agree to submit to the exclusive jurisdiction of the state and federal courts located in the State of Delaware for any dispute arising from or related to these Terms, without prejudice to the mandatory consumer rights granted by the laws of your country of residence. VoxPages LLC is a limited liability company incorporated under the laws of the State of Delaware.",
 
     "s17Title": "17. Contact",
-    "s17Text": "For questions about these Terms & Conditions, exercise of rights, subscription management or dispute resolution, write to <strong>info@summaryvox.com</strong>. By continuing to use SummaryVox, you accept these Terms & Conditions in full."
+    "s17Text": "For questions about these Terms & Conditions, exercise of rights, subscription management or dispute resolution, write to <strong>help@support.voxpages.com</strong>. By continuing to use VoxPages, you accept these Terms & Conditions in full."
   },
   "SubPolicy": {
     "back": "← Back to home",
     "title": "Subscription, Cancellation & Refunds Policy",
-    "intro": "This document is legally annexed to and integrated with the SummaryVox General Terms & Conditions and details the commercial terms, billing commitments, cancellation flow and refund policy for the Premium Plan.",
+    "intro": "This document is legally annexed to and integrated with the VoxPages General Terms & Conditions and details the commercial terms, billing commitments, cancellation flow and refund policy for the Premium Plan.",
     "ctaUnsub": "I want to unsubscribe",
     "ctaRefund": "Request a refund",
 
@@ -325,9 +325,9 @@
     "s5Title": "5. Refund policy",
     "s5Text": "Our refund policy is as follows:",
     "s5Li1": "<strong>24-hour trial:</strong> cancelling during the trial never produces a charge, so there's no refund to request.",
-    "s5Li2": "<strong>14-day window after the first charge:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to info@summaryvox.com.",
+    "s5Li2": "<strong>14-day window after the first charge:</strong> within 14 days of the first paid charge, you may request a prorated refund based on unused time by writing to help@support.voxpages.com.",
     "s5Li3": "<strong>Outside the 14-day window:</strong> cancellation stops future charges but does not produce a refund of the period already paid. You retain access until the end of that period.",
-    "s5Li4": "<strong>Incorrect or duplicate charges:</strong> if you spot an incorrect or duplicate charge, write to info@summaryvox.com and we'll resolve it as soon as possible.",
+    "s5Li4": "<strong>Incorrect or duplicate charges:</strong> if you spot an incorrect or duplicate charge, write to help@support.voxpages.com and we'll resolve it as soon as possible.",
 
     "s6Title": "6. Changes to pricing policy",
     "s6Li1": "We will notify you of any price changes with at least 30 days' advance notice by email or through the service.",
@@ -336,7 +336,7 @@
     "s6Li4": "If you choose to continue, you accept the new price for future billing periods.",
 
     "s7Title": "7. Charge disputes",
-    "s7Li1": "If you don't recognize a charge or have a billing question, write to info@summaryvox.com before disputing with your bank.",
+    "s7Li1": "If you don't recognize a charge or have a billing question, write to help@support.voxpages.com before disputing with your bank.",
     "s7Li2": "We can provide detailed information about each transaction (date, amount, method, Stripe identifier).",
     "s7Li3": "We resolve billing issues quickly and fairly.",
 
@@ -348,10 +348,10 @@
     "s8Li4": "Attempt to circumvent security or content protection measures.",
 
     "s9Title": "9. Support contact",
-    "s9Text": "For any question about cancellations, billing or service issues, write to <strong>info@summaryvox.com</strong>. This policy may be updated periodically; changes take effect immediately upon publication on this page."
+    "s9Text": "For any question about cancellations, billing or service issues, write to <strong>help@support.voxpages.com</strong>. This policy may be updated periodically; changes take effect immediately upon publication on this page."
   },
   "Hub": {
-    "welcome": "Welcome to SummaryVox",
+    "welcome": "Welcome to VoxPages",
     "dashboardTitle": "Your Library",
     "dashboardDesc": "Here you can see and listen to all the summaries you have access to.",
     "emptyState": "You haven't saved any summaries yet. Explore the catalog to get started!",

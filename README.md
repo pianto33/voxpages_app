@@ -1,6 +1,6 @@
-# SummaryVox
+# VoxPages
 
-El proyecto base para SummaryVox está inicializado y estructurado.
+El proyecto base para VoxPages está inicializado y estructurado.
 
 ## Tecnologías Utilizadas
 - **Next.js** (App Router, TypeScript)
