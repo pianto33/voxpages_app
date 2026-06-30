@@ -2,8 +2,17 @@
 
 import { useState, useRef, useEffect } from "react";
 
-export function CustomAudioPlayer({ src, title }: { src: string; title?: string }) {
+export function CustomAudioPlayer({
+  src,
+  title,
+  autoPlay = false,
+}: {
+  src: string;
+  title?: string;
+  autoPlay?: boolean;
+}) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const autoPlayStarted = useRef(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -20,7 +29,6 @@ export function CustomAudioPlayer({ src, title }: { src: string; title?: string 
     audio.addEventListener("timeupdate", setAudioTime);
     audio.addEventListener("ended", handleEnded);
 
-    // Initial setting if already loaded
     if (audio.readyState >= 1) {
       setDuration(audio.duration);
     }
@@ -32,14 +40,58 @@ export function CustomAudioPlayer({ src, title }: { src: string; title?: string 
     };
   }, []);
 
-  const togglePlayPause = () => {
-    const prevValue = isPlaying;
-    setIsPlaying(!prevValue);
-    if (!prevValue) {
-      audioRef.current?.play();
-    } else {
-      audioRef.current?.pause();
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    autoPlayStarted.current = false;
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setDuration(0);
+    audio.pause();
+    audio.src = src;
+    audio.load();
+  }, [src]);
+
+  useEffect(() => {
+    if (!autoPlay || autoPlayStarted.current) return;
+
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const startPlayback = () => {
+      if (autoPlayStarted.current) return;
+      autoPlayStarted.current = true;
+      audio
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch(() => setIsPlaying(false));
+    };
+
+    if (audio.readyState >= 2) {
+      startPlayback();
+      return;
     }
+
+    audio.addEventListener("canplay", startPlayback, { once: true });
+    return () => audio.removeEventListener("canplay", startPlayback);
+  }, [autoPlay, src]);
+
+  const pause = () => {
+    audioRef.current?.pause();
+    setIsPlaying(false);
+  };
+
+  const togglePlayPause = () => {
+    if (isPlaying) {
+      pause();
+      return;
+    }
+
+    audioRef.current
+      ?.play()
+      .then(() => setIsPlaying(true))
+      .catch(() => setIsPlaying(false));
   };
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,9 +119,8 @@ export function CustomAudioPlayer({ src, title }: { src: string; title?: string 
 
   return (
     <div className="custom-audio-player">
-      <audio ref={audioRef} src={src} preload="metadata" />
+      <audio ref={audioRef} preload="metadata" />
 
-      {/* Top Info */}
       <div className="audio-header">
         <div className="audio-icon">
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -82,7 +133,6 @@ export function CustomAudioPlayer({ src, title }: { src: string; title?: string 
         </div>
       </div>
 
-      {/* Progress Bar */}
       <div className="audio-progress-container">
         <span className="audio-time">{formatTime(currentTime)}</span>
         <input
@@ -94,13 +144,12 @@ export function CustomAudioPlayer({ src, title }: { src: string; title?: string 
           className="audio-slider"
           style={{
             backgroundSize: `${duration > 0 ? (currentTime / duration) * 100 : 0}% 100%`,
-            flex: 1
+            flex: 1,
           }}
         />
         <span className="audio-time">{formatTime(duration)}</span>
       </div>
 
-      {/* Controls */}
       <div className="audio-controls">
         <button onClick={() => skipTime(-15)} className="audio-btn-secondary" title="Rebobinar 15s">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

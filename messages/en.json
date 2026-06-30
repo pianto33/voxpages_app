@@ -360,6 +360,7 @@
     "subTrial": "Free trial",
     "subCanceled": "Cancelled",
     "subNextBilling": "Next billing",
-    "cancelBtn": "Cancel subscription"
+    "cancelBtn": "Cancel subscription",
+    "explore": "Explore"
   }
 }
