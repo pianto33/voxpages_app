@@ -21,6 +21,10 @@ export function SubscribeCheckout({ userName }: SubscribeCheckoutProps) {
         body: JSON.stringify({ priceKey }),
       });
       const data = await res.json();
+      if (data.code === "existing_subscription" || data.error === "existing_subscription") {
+        window.location.href = "/home";
+        return;
+      }
       if (data.url) {
         window.location.href = data.url;
       } else {

@@ -3,6 +3,7 @@ import { stripe } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
 import { createServiceClient } from "@/lib/supabase/service";
 import { getPriceForCountry } from "@/lib/stripe-prices";
+import { customerHasBillableSubscription } from "@/lib/stripe-subscription-guard";
 
 export async function POST(req: NextRequest) {
   try {
@@ -48,6 +49,21 @@ export async function POST(req: NextRequest) {
           { user_id: user.id, stripe_customer_id: customerId, status: "inactive", plan: "free" },
           { onConflict: "user_id" }
         );
+    }
+
+    const existingBillable = await customerHasBillableSubscription(stripe, {
+      customerId,
+      email: user.email,
+    });
+    if (existingBillable.hasBillable) {
+      return NextResponse.json(
+        {
+          error: "existing_subscription",
+          code: "existing_subscription",
+          subscriptionId: existingBillable.subscriptionId,
+        },
+        { status: 409 }
+      );
     }
 
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
