@@ -22,6 +22,30 @@ export const PRICES_BY_COUNTRY: Record<string, PriceConfig> = {
     currency: "EUR",
     label: "EUR 19.99 / mes",
   },
+  // Australia
+  AU: {
+    priceId: "price_1TtVo7IiQJtaidhOOllGeCDd",
+    currency: "AUD",
+    label: "AUD 28.90 / month",
+  },
+  // Macao
+  MO: {
+    priceId: "price_1TtVoTIiQJtaidhOwZlGa1cw",
+    currency: "MOP",
+    label: "MOP 160.00 / month",
+  },
+  // Hong Kong
+  HK: {
+    priceId: "price_1TtVooIiQJtaidhOoUDABLqH",
+    currency: "HKD",
+    label: "HKD 150.00 / month",
+  },
+  // Singapore
+  SG: {
+    priceId: "price_1TtVpJIiQJtaidhOVKjfIX7j",
+    currency: "SGD",
+    label: "SGD 25.99 / month",
+  },
   TEST: {
     priceId: "price_1TD8B4IiQJtaidhOXAkoMP6e",
     currency: "USD",
